@@ -1,2 +1,14 @@
-# Automated-Resume-Parser
-The Automated Resume Parser is a Flask-based system that uses spaCy to extract candidate information from PDF, DOCX, and TXT resumes, including name, contact information, skills, education, and experience. With the help of a straightforward API, resumes can be easily searched.
+# Automated Resume Parser (Flask + spaCy + PostgreSQL)
+
+Extracts candidate details (name, email, phone, skills, education, summary/experience) from PDF/DOCX/TXT resumes and stores them in a searchable PostgreSQL database.
+
+## Stack
+- Python 3.11, Flask
+- spaCy (en_core_web_sm)
+- PDFPlumber (PDF), python-docx (DOCX)
+- PostgreSQL + SQLAlchemy
+
+## Quick Start (Docker)
+```bash
+cp .env.example .env
+docker compose up --build
